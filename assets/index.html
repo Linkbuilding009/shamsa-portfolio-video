@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Video</title>
+
+  <!-- Preload for faster start -->
+  <link rel="preload" as="video" href="assets/hero.mp4" type="video/mp4">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+  </section>
+
+</body>
+</html>
